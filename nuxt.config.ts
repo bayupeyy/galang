@@ -14,7 +14,8 @@ export default defineNuxtConfig({
   },
 
   googleFonts: {
-    // Options
-    link rel="dns-prefetch" href="https://fonts.gstatic.com/"
+    families: {
+      Poppins: [100, 200, 300, 400, 500, 600, 700, 800, 900], // Menyederhanakan tanpa gaya italic
+    }
   }
 })
