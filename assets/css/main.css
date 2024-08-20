@@ -25,7 +25,7 @@ body {
   }
   
   .project-header {
-    background-image: url("/auth-background.svg");
+    background-image: url("/assets/images/auth-background.svg");
     background-position: top right;
     background-repeat: no-repeat;
     background-color: #3b41e3;
@@ -34,7 +34,7 @@ body {
   }
   
   .dashboard-header {
-    background-image: url("/auth-background.svg");
+    background-image: url("/assets/images/auth-background.svg");
     background-position: top right;
     background-repeat: no-repeat;
     background-color: #3b41e3;

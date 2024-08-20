@@ -15,11 +15,13 @@
                   >Full Name</label
                 >
                 <input
-                  type="text"
-                  class="auth-form focus:outline-none focus:bg-purple-hover focus:shadow-outline focus:border-purple-hover-stroke focus:text-gray-100"
-                  placeholder="Write Your Name Here"
-                  value="Julia Keeva Hanna"
+                    type="text"
+                    class="auth-form focus:outline-none focus:bg-purple-hover focus:shadow-outline focus:border-purple-hover-stroke focus:text-black-10"
+                    placeholder="Julia Keeva Hanna"
+                    onfocus="this.placeholder = ''"
+                    onblur="if (this.value == '') {this.placeholder = 'Julia Keeva Hanna';}"
                 />
+
               </div>
             </div>
             <div class="mb-6">
@@ -29,9 +31,9 @@
                 >
                 <input
                   type="text"
-                  class="auth-form focus:outline-none focus:bg-purple-hover focus:shadow-outline focus:border-purple-hover-stroke focus:text-gray-100"
+                  class="auth-form focus:outline-none focus:bg-purple-hover focus:shadow-outline focus:border-purple-hover-stroke focus:text-black-10"
                   placeholder="Write your occupation here"
-                  value="Graphic Designer"
+                  onblur="if (this.value == '') {this.placeholder = 'Graphic Designer';}"
                 />
               </div>
             </div>
@@ -44,7 +46,7 @@
                   type="email"
                   class="auth-form focus:outline-none focus:bg-purple-hover focus:shadow-outline focus:border-purple-hover-stroke focus:text-gray-100"
                   placeholder="Write your email address here"
-                  value="julia.keeva@gmail.com"
+                  onblur="if(this.value == ''){this.placeholder = 'julia.keeva@gmail.com';}"
                 />
               </div>
             </div>
@@ -54,11 +56,13 @@
                   >Password</label
                 >
                 <input
-                  type="password"
-                  class="auth-form focus:outline-none focus:bg-purple-hover focus:shadow-outline focus:border-purple-hover-stroke focus:text-gray-100"
-                  placeholder="Type your password here"
-                  value="nasigorenglimaribbu"
+                    type="password"
+                    class="auth-form focus:outline-none focus:bg-purple-hover focus:shadow-outline focus:border-purple-hover-stroke focus:text-black-10"
+                    placeholder="Password"
+                    onfocus="this.placeholder = ''"
+                    onblur="if (this.value == '') {this.placeholder = 'Password';}"
                 />
+
               </div>
             </div>
             <div class="mb-6">
@@ -74,9 +78,8 @@
             <div class="text-center">
               <p class="text-white text-md">
                 Already have account?
-                <a href="/login" class="no-underline text-orange-500"
-                  >Sign In</a
-                >.
+                <nuxt-link to ="/login" class="no-underline text-orange-500"
+                  >Sign In</nuxt-link>.
               </p>
             </div>
           </div>
